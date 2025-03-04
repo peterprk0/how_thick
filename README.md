@@ -4,4 +4,9 @@ Tested with GROMACS 2024.4.
 
 These scripts assume your runnning simulation files are names as md.{xtc,tpr}
 
+To run them:
 
+```
+python get_headgroups_ndx
+bash thickness.sh
+```
