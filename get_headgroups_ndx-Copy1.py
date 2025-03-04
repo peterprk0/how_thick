@@ -1,9 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
-
-
 import re
 
 def get_z_middle(file_gro):
