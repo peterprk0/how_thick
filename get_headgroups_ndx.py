@@ -34,16 +34,16 @@ def get_headgroups_ndx(input_file_gro, lipid, lipid_headgroup, z_middle):
     
         with open('headgroups.ndx', 'w') as output:
             output.write('[ headgroup_upper ]' + "\n")
-            for i in range(0, len(IL_index_upper), 15):  # Process in chunks of 15
-                line = " ".join(map(str, IL_index_upper[i:i+15]))  # Convert numbers to strings and join
+            for i in range(0, len(index_upper), 15):  # Process in chunks of 15
+                line = " ".join(map(str, index_upper[i:i+15]))  # Convert numbers to strings and join
                 output.write(line + "\n")  # Write to file with a newline
                 
             output.write("\n")
             output.write('[ headgroup_lower ]' + "\n")
-            for i in range(0, len(IL_index_lower), 15):  # Process in chunks of 15
-                line = " ".join(map(str, IL_index_lower[i:i+15]))  # Convert numbers to strings and join
+            for i in range(0, len(index_lower), 15):  # Process in chunks of 15
+                line = " ".join(map(str, index_lower[i:i+15]))  # Convert numbers to strings and join
                 output.write(line + "\n")  # Write to file with a newline
 
 z_middle = get_z_middle('md.gro')
-get_headgroups_ndx('md.gro', 'POPC','P', z_middle)
+get_headgroups_ndx('md.gro', 'POPC','PO4', z_middle)
 
