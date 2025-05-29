@@ -4,7 +4,7 @@ Tested with GROMACS 2024.4.
 
 These scripts assume your runnning simulation files are names as md.{xtc,tpr,gro}
 
-Also, you will need a .ndx file (in this case, I named it as *groups.ndx*), with MEMB as the group containing your whole bilayer.
+Also, you will need a .ndx file (in this case, I named it as *groups.ndx*), with `MEMB` as the group containing your whole bilayer.
 
 To run them:
 
